@@ -1,0 +1,35 @@
+{
+  "name": "net.rutabagatechnology.googlewalletoutsystemsplugin",
+  "version": "1.0",
+  "description": "An Android Cordova plugin that allows users to add generic passes to their Google wallet.",
+  "cordova": {
+    "id": "net.rutabagatechnology.googlewalletoutsystemsplugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FathersNelsons/GoogleWalletOutSystemsPlugin.git"
+  },
+  "keywords": [
+    "Wallet",
+    "Cards",
+    "Loyalty",
+    "Pass",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Grayson Udstrand <grayson.udstrand@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FathersNelsons/GoogleWalletOutSystemsPlugin/issues"
+  },
+  "homepage": "https://github.com/FathersNelsons/GoogleWalletOutSystemsPlugin"
+}
