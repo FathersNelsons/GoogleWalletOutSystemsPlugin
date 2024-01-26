@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="net.rutabagatechnology.googlewalletoutsystemsplugin" version="1.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>GoogleWalletOutSystemsPlugin</name>
+    <description>A cordova plugin that should allow OutSystems to integrate with the Google Pay API.</description>
+    <license>MIT</license>
+    <repo>https://github.com/FathersNelsons/GoogleWalletOutSystemsPlugin.git</repo>
+    <issue>https://github.com/FathersNelsons/GoogleWalletOutSystemsPlugin/issues</issue>
+    <js-module name="GoogleWalletOutSystemsPlugin" src="app/www/GoogleWalletOutSystemsPlugin.js">
+        <clobbers target="cordova.plugins.GoogleWalletOutSystemsPlugin" />
+    </js-module>
+    <platform name="android">
+        <framework src="build.gradle" custom="true" type="gradleReference" />
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="GoogleWallet">
+                <param name="android-package" value="net.rutabagatechnology.googlewalletoutsystemsplugin.GoogleWallet" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+        <source-file src="src/main/java/GoogleWalletOutSystemsPlugin.java" target-dir="src/net/rutabagatechnology/outsystems/googlewalletplugin/GoogleWalletOutSystemsPlugin" />
+    </platform>
+</plugin>
